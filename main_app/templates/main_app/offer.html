@@ -1,0 +1,6 @@
+{% for offer in offers %}
+  <div class="offer-container p-2 rounded mb-1 alert alert-danger font-weight-bold">
+    <marquee behavior="scroll" direction={{offer.direction}} scrollamount={{offer.speed}}>{{ offer.message }}</marquee>
+  </div>
+{% endfor %}
+{% include 'main_app/navbar.html' %}

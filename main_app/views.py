@@ -1,12 +1,21 @@
 from django.shortcuts import render
+import datetime
 
-from .models import BrandsWeUse
+from .models import BrandsWeUse, MakeupOffers
 
 
 # Create your views here.
 def index(request):
+    offers = MakeupOffers.objects.filter(end_date__gte=datetime.date.today())
+    context = {
+        'artist_name': 'Makeup Artist',
+        'artist_location': 'Delhi',
+        'whatsapp_number': '9149883693',
+        'offers': offers,
+        'hasOffers': True if offers else False,
+    }
 
-    return render(request, "main_app/index.html", {})
+    return render(request, "main_app/index.html", context)
 
 
 def about(request):

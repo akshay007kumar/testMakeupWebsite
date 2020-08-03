@@ -73,6 +73,28 @@ class ContactUs(models.Model):
         verbose_name_plural = "Contact Us"
 
 
+class MakeupOffers(models.Model):
+    """
+    # Model holds offers
+    # fields:
+        - start_date (datetime)
+        - end_date (datetime)
+        - message (char)
+    """
+    name = models.CharField(max_length=30)
+    start_date = models.DateField()
+    end_date = models.DateField()
+    message = models.CharField(max_length=255)
+    direction = models.CharField(max_length=10, default="left")
+    speed = models.IntegerField(default=10)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        verbose_name_plural = "Makeup Offers"
+
+
 class MakeupServiceType(models.Model):
     """
     # Model holds the items involved in a particular makeup type
