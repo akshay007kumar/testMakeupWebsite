@@ -1,0 +1,40 @@
+{% extends 'main_app/base.html' %}
+
+{% block title %} Services {% endblock %}
+
+{% block styles %}
+
+img {
+    float: left;
+    <!--width:  100px;-->
+    <!--height: 100px;-->
+    <!--object-fit: cover;-->
+}
+
+{% endblock %}
+
+{% block content %}
+
+{% include 'main_app/navbar.html' %}
+
+<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0">Gallery</h1>
+
+  <hr class="mt-2 mb-5">
+
+  <div class="row text-center text-lg-left d-flex flex-wrap align-items-center">
+      {% for brand in brands %}
+      <div class="col-lg-3 col-md-4 col-6">
+          <a href={{brand.src}} class="d-block mb-4 h-100">
+              <img class="img-fluid img-thumbnail" src={{brand.src}} data-image-dimensions="538x538" alt={{brand.alt}}>
+          </a>
+      </div>
+      {% endfor %}
+  </div>
+
+</div>
+
+{% include 'main_app/footer.html' %}
+
+{% endblock %}

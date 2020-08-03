@@ -1,0 +1,127 @@
+{% extends 'main_app/base.html' %}
+
+{% block title %} Makeup Artist {% endblock %}
+
+{% block styles %}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+
+
+{% endblock %}
+
+{% block content %}
+{% load static %}
+
+<!--{% include 'main_app/image_coursal.html' %}-->
+
+{% include 'main_app/navbar.html' %}
+
+<div class="container my-0 p-5 bg-light">
+
+    <p>
+      Akriti Sarraf Makeup Artist based on patna offers best in Bridal Makeup, Party, Occasion  in Normal, HD and Airbrush.
+      The services are available on-site and at the venue in Patna only.
+    </p>
+    <p>
+      Call or Whatsapp 9149883693 to avail the best in makeup services!
+    </p>
+    <p>
+      You can dm us at our <a href="#">facebook</a> or <a href="#">instagram</a> handle as well.
+    </p>
+
+    <div class="makeup-container">
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <img src="{% static 'main_app/images/demo/makeup1.jpg' %}" class="card-img-top" alt="bridal-makeup-demo">
+            <div class="card-body">
+              <h5 class="card-title">Occasional Makeup</h5>
+              <p class="card-text">
+                Look your Best on perhaps the most important day of your life. Parul's Bridal Makeup encompasses the true
+                spirit of marriage. From Subtle undertones to bold eyes, Parul understands what the bride to be wants on
+                her special day and customizes the makeup so that her every bride looks a class apart.
+              </p>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <img src="{% static 'main_app/images/demo/makeup1.jpg' %}" class="card-img-top" alt="bridal-makeup-demo">
+            <div class="card-body">
+              <h5 class="card-title">Bridal Makeup</h5>
+              <p class="card-text">
+                Look your Best on perhaps the most important day of your life. Parul's Bridal Makeup encompasses the true
+                spirit of marriage. From Subtle undertones to bold eyes, Parul understands what the bride to be wants on
+                her special day and customizes the makeup so that her every bride looks a class apart.
+              </p>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+          <div class="card">
+            <img src="{% static 'main_app/images/demo/makeup1.jpg' %}" class="card-img-top" alt="bridal-makeup-demo">
+            <div class="card-body">
+              <h5 class="card-title">Makeovers</h5>
+              <p class="card-text">
+                Look your Best on perhaps the most important day of your life. Parul's Bridal Makeup encompasses the true
+                spirit of marriage. From Subtle undertones to bold eyes, Parul understands what the bride to be wants on
+                her special day and customizes the makeup so that her every bride looks a class apart.
+              </p>
+              <a href="#" class="btn btn-primary">See More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+</div>
+
+{% include 'main_app/footer.html' %}
+
+{% endblock %}

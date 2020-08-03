@@ -1,0 +1,83 @@
+{% extends 'main_app/base.html' %}
+
+{% block title %} Services {% endblock %}
+
+{% block styles %} {% endblock %}
+
+{% block content %}
+
+{% include 'main_app/navbar.html' %}
+
+<div class="text-center">
+    <div class="container">
+        <div class="row pt-4">
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Party Makeup</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1>
+                            <b>&#8377 8999</b>
+                            <!--<small class="text-muted">/person</small>-->
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                        </ul>
+                        <a href="{% url 'book-online' %}" class="btn btn-lg btn-block btn-secondary">Book</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Reception Makeup</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1>
+                            <b>&#8377 11999</b>
+                            <!--<small class="text-muted">/person</small>-->
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                        </ul>
+                        <a href="{% url 'book-online' %}" class="btn btn-lg btn-block btn-secondary">Book</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                    <div class="card-header">
+                        <h4 class="my-0 font-weight-normal">Bridal Makeup</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1>
+                            <b>&#8377 15999</b>
+                            <!--<small class="text-muted">/person</small>-->
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                            <li>Airbrush</li>
+                        </ul>
+                        <a href="{% url 'book-online' %}" class="btn btn-lg btn-block btn-secondary">Book</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'main_app/footer.html' %}
+
+{% endblock %}
