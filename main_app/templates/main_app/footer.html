@@ -22,19 +22,19 @@
                 <h5 class="text-uppercase">Links</h5>
                 <ul class="list-unstyled">
                     <li>
-                        <a href="#!">Homepage</a>
+                        <a href="{% url 'index' %}">Homepage</a>
                     </li>
                     <li>
-                        <a href="#!">Service</a>
+                        <a href="{% url 'gallery' %}">Gallery</a>
                     </li>
                     <li>
-                        <a href="#!">Gallery</a>
+                        <a href="{% url 'book-online' %}">Book Online</a>
                     </li>
                     <li>
-                        <a href="#!">About Us</a>
+                        <a href="{% url 'brands-used' %}">Brands We Use</a>
                     </li>
                     <li>
-                        <a href="#!">Contact Us</a>
+                        <a href="{% url 'contactus' %}">Contact Us</a>
                     </li>
                 </ul>
 
@@ -45,7 +45,8 @@
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3 bg-secondary text-light">© 2020 Copyright:
-        <a href="{% url 'index' %}" style="color: white;text-decoration: none;"> makeupartist.com</a>
+        <a href="{% url 'index' %}" class="text-light"> makeupartist.com</a>
+        <span class="ml-3 border-left pl-3">Site design by <a href="#" class="text-light"> Akshay Kumar</a></span>
     </div>
     <!-- Copyright -->
 </footer>

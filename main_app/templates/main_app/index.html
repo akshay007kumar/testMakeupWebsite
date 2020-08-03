@@ -2,36 +2,7 @@
 
 {% block title %} Makeup Artist {% endblock %}
 
-{% block styles %}
-
-<!--font-family: 'Open Sans', sans-serif;-->
-<!--font-family: 'Rajdhani', sans-serif;-->
-<!--font-family: 'Recursive', sans-serif;-->
-<!--font-family: 'Roboto', sans-serif;-->
-
-p {
-  font-family: 'Recursive';
-}
-
-strong,.card-body {
-    font-family: 'Roboto';
-}
-
-.offer-container {
-  font-family: 'Open Sans', sans-serif;;
-}
-
-a {
-  font-family: 'Red Rose', cursive;
-
-}
-
-
-
-<!--.offer-container {-->
-  <!--font-family: 'Recursive';-->
-<!--}-->
-{% endblock %}
+{% block styles %} {% endblock %}
 
 {% block content %}
 {% load static %}
@@ -40,8 +11,7 @@ a {
 
 {% include 'main_app/offer.html' %}
 
-<div class="container my-0 p-3 shadow bg-white rounded my-3">
-
+<div class="container my-3 p-4 shadow bg-white rounded my-3">
 
   <div class="intro-container border-bottom">
     <p>
@@ -65,7 +35,7 @@ a {
           <div class="card-body">
             <h5 class="card-title border-bottom pb-2">Occasional Makeup</h5>
             <p class="card-text">
-              Look your Best on perhaps the most important day of your life. Parul's Bridal Makeup encompasses the true
+              Look your Best on perhaps the most important day of your life. Makeup Artist encompasses the true
               spirit of marriage. From Subtle undertones to bold eyes, Parul understands what the bride to be wants on
               her special day and customizes the makeup so that her every bride looks a class apart.
             </p>
@@ -80,9 +50,9 @@ a {
           <div class="card-body">
             <h5 class="card-title border-bottom pb-2">Bridal Makeup</h5>
             <p class="card-text">
-              Look your Best on perhaps the most important day of your life. Parul's Bridal Makeup encompasses the true
-              spirit of marriage. From Subtle undertones to bold eyes, Parul understands what the bride to be wants on
-              her special day and customizes the makeup so that her every bride looks a class apart.
+              Natalia’s goal in weddings is to create a warm, naturally beautiful look using a palette of colors,
+              textures and pigments that complement her bride’s unique personality and complexion. With joy and serenity,
+              she works to make her brides look and feel absolutely radiant on their day.
             </p>
             <a href="#" class="btn btn-primary">See More</a>
           </div>
@@ -95,9 +65,7 @@ a {
           <div class="card-body">
             <h5 class="card-title border-bottom pb-2">Makeovers</h5>
             <p class="card-text">
-              Look your Best on perhaps the most important day of your life. Parul's Bridal Makeup encompasses the true
-              spirit of marriage. From Subtle undertones to bold eyes, Parul understands what the bride to be wants on
-              her special day and customizes the makeup so that her every bride looks a class apart.
+              {{artist_name}} has worked as a freelance artist an year of experience in beauty.
             </p>
             <a href="#" class="btn btn-primary">See More</a>
           </div>
